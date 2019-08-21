@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://193.112.100.103:8761/eureka/
+      defaultZone: http://172.31.10.31:8761/eureka/
 
 server:
   tomcat:
@@ -12,7 +12,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/cloud?useUnicode=true&characterEncoding=UTF8&useSSL=false&autoReconnect=true
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: root
+    password: Yc*PFYoB8H
     max-idle: 10
     min-idle: 5
     test-on-borrow: false
@@ -22,21 +22,21 @@ spring:
     hikari:
       minimum-idle: 0
   redis:
-    host: 127.0.0.103
+    host: 172.31.10.212
     port: 6379
-    password: x19961010
+    password: INtIgnU9IAyq!$MpDNpS
 
   rabbitmq:
     host: 127.0.0.1
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: 123456
   http:
     multipart:
       max-file-size: 1000MB
       max-request-size: 1000MB
   zipkin: 
-    base-url: http://localhost:5001
+    base-url: http://172.31.10.31:5001
 redis:
   cache:
     expiration: 3601
